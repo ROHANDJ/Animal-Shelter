@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ab6103;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.login-container, .container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ba7e36;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+    text-align: center;
+    color: white;
+}
+
+.login-form{
+    display: flex;
+    justify-content: center;
+}
+
+.signin-container{
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ba7e36;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+    text-align: center;
+    color: white;
+}
+
+.signin-form{
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, button, select{
+    margin-bottom: 10px;
+    width: 50%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #ab6103;
+    color: #ffd5b0;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7d4702;
+}
+
+#animalList, #eligibleAdopters {
+    margin-top: 20px;
+}
+
+
+.error{
+    color: red;
+}
+
+.animalList{
+    display: flex;
+    flex-direction: row;
+}

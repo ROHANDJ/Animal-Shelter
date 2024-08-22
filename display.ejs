@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="animalList">
+            <% animals.forEach(function (animal) { %>
+              <div>
+                 <p>ID: <%= animal.animal_id %>, NAME: <%= animal.name %>, TYPE: <%= animal.type %>, AGE: <%= animal.age %>, OWNER_ID: <%= animal.user_id %></p>
+               </div>
+            <% }); %>   
+         <button onclick="location.href='/'">Go back to home page.</button>  
+     </div>
+    </div>
+</body>
+</html> 

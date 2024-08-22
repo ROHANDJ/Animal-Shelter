@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PAWS-CONNECT Sign In</title>
+</head>
+<body>
+    
+<div class="signin-container">
+        <h1>PAWS-CONNECT Sign In</h1>
+        <div class="signin-form">
+        <form id="signinForm" method="POST" action="/signin">
+            <p class="error"><%= locals.error ? error : null %></p>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input type="tel" id="contact" name="contact" placeholder="Phone" required>
+            <input type="email" id="email" name="email" placeholder="Email" required> 
+            <input type="password" id="password" name="password" autocomplete="off" placeholder="Password" required>
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

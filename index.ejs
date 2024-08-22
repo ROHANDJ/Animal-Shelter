@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Animal Shelter Website</title>
+</head>
+<body>
+    <div class="container"> 
+        <h1>PAWS-CONNECT</h1>
+        
+        <form id="animalForm" action="/addanimal" method="POST">
+            <h2>Add Animal</h2>
+            <input type="text" id="addAnimalName" name="addAnimalName" placeholder="Name" required>
+            <select name="addAnimalType" id="animals">
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="sheep">Sheep</option>
+                <option value="snake">Snake</option>
+            </select>
+            <input type="number" id="addAnimalAge" name="addAnimalAge" placeholder="Age " required>
+            <button type="submit">Add Animal</button>
+        </form>
+
+        <form action="/display" method="POST">
+            <button type="submit">Display All Animals</button>
+        </form>
+        
+        <h2>Adopt Animal</h2>
+        
+        <form id="adopterForm" action="/adoptanimal" method="POST">
+            <p><%= locals.message ? message : null %></p>
+            <input type="number" id="adoptAnimalId" name="adoptAnimalId" placeholder="Id" required>
+            <input type="text" id="adoptAnimalName" name="adoptAnimalName" placeholder="Name" required>
+            <input type="text" id="adoptAnimalType" name="adoptAnimalType" placeholder="Type" required>
+            <input type="number" id="adoptAnimalAge" name="adoptAnimalAge" placeholder="Age" required>
+            <button type="submit">Adopt Animal</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
